@@ -16,28 +16,18 @@
 //    remove:             `mulle-sourcetree mark mulle-allocator no-header`
 //    rename:             `mulle-sde dependency|library set mulle-allocator include whatever.h`
 //    toggle #import:     `mulle-sourcetree mark mulle-allocator [no-]import`
-//    toggle localheader: `mulle-sourcetree mark mulle-allocator [no-]localheader`
 //    toggle public:      `mulle-sourcetree mark mulle-allocator [no-]public`
 //    toggle optional:    `mulle-sourcetree mark mulle-allocator [no-]require`
 //    remove for os:      `mulle-sourcetree mark mulle-allocator no-os-<osname>`
-# if defined( __has_include) && __has_include("mulle-allocator.h")
-#   include "mulle-allocator.h"   // mulle-allocator
-# else
-#   include <mulle-allocator/mulle-allocator.h>   // mulle-allocator
-# endif
+# include <mulle-allocator/mulle-allocator.h>   // mulle-allocator
 
 // How to tweak the following mulle-thread #include
 //    remove:             `mulle-sourcetree mark mulle-thread no-header`
 //    rename:             `mulle-sde dependency|library set mulle-thread include whatever.h`
 //    toggle #import:     `mulle-sourcetree mark mulle-thread [no-]import`
-//    toggle localheader: `mulle-sourcetree mark mulle-thread [no-]localheader`
 //    toggle public:      `mulle-sourcetree mark mulle-thread [no-]public`
 //    toggle optional:    `mulle-sourcetree mark mulle-thread [no-]require`
 //    remove for os:      `mulle-sourcetree mark mulle-thread no-os-<osname>`
-# if defined( __has_include) && __has_include("mulle-thread.h")
-#   include "mulle-thread.h"   // mulle-thread
-# else
-#   include <mulle-thread/mulle-thread.h>   // mulle-thread
-# endif
+# include <mulle-thread/mulle-thread.h>   // mulle-thread
 
 #endif
